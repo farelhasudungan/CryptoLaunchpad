@@ -16,7 +16,7 @@
                 <div class="bg-white rounded-lg shadow-lg p-9 md:p-10">
                 <div class="mb-11 text-left">
                     <span class="text-lg font-medium text-black">Welcome!</span>
-                    <p class="text-sm text-coolGray-500 font-medium">Enter your credentials to access your account</p>
+                    <p class="text-sm text-gray-500 font-medium">Enter your credentials to access your account</p>
                 </div>
                 <form action="#" method="post">
                     <div class="mb-6">
