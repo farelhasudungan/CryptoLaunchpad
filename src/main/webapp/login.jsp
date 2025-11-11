@@ -8,97 +8,40 @@
     <link href="css/output.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
-    
-    <div class="w-full max-w-md">
-        <!-- Card Container -->
-        <div class="crypto-card">
-            
-            <!-- Logo/Icon -->
-            <div class="mb-8">
-                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mb-6">
-                    <span class="text-2xl">🚀</span>
+    <section class="relative bg-sky-50 overflow-hidden">
+        <div class="py-20 md:py-28 min-h-screen flex items-center">
+            <div class="container px-4 mx-auto">
+            <div class="max-w-md mx-auto">
+                <div class="bg-white rounded-lg shadow-lg p-9 md:p-10">
+                <div class="mb-11 text-left">
+                    <span class="text-lg font-medium text-black">Welcome!</span>
+                    <p class="text-sm text-coolGray-500 font-medium">Enter your credentials to access your account</p>
                 </div>
-                
-                <!-- Welcome Text -->
-                <h1 class="text-2xl font-bold text-gray-900 mb-2">Welcome back!</h1>
-                <p class="text-gray-600">Sign in to your account to continue.</p>
-            </div>
-            
-            <!-- Error Message -->
-            <% if (request.getAttribute("error") != null) { %>
-                <div class="mb-5 bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
-                    <p class="text-sm"><%= request.getAttribute("error") %></p>
-                </div>
-            <% } %>
-            
-            <!-- Login Form -->
-            <form action="login" method="post" class="space-y-5">
-                
-                <!-- Email Field -->
-                <div>
-                    <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">
-                        Email
-                    </label>
-                    <input 
-                        type="email" 
-                        id="email" 
-                        name="email" 
-                        required
-                        class="crypto-input"
-                        placeholder="Enter your email"
-                    >
-                </div>
-                
-                <!-- Password Field -->
-                <div>
-                    <label for="password" class="block text-sm font-semibold text-gray-900 mb-2">
-                        Password
-                    </label>
-                    <input 
-                        type="password" 
-                        id="password" 
-                        name="password" 
-                        required
-                        class="crypto-input"
-                        placeholder="Enter your password"
-                    >
-                </div>
-                
-                <!-- Remember Me & Forgot Password -->
-                <div class="flex items-center justify-between">
-                    <div class="flex items-center">
-                        <input 
-                            type="checkbox" 
-                            id="remember" 
-                            name="remember"
-                            class="w-4 h-4 text-black border-gray-300 rounded focus:ring-black"
-                        >
-                        <label for="remember" class="ml-2 text-sm text-gray-700">
-                            Remember me
-                        </label>
+                <form action="#" method="post">
+                    <div class="mb-6">
+                    <label class="block mb-2 text-coolGray-800 font-medium" for="email">Email Address</label>
+                    <input class="w-full py-3 px-4 text-coolGray-500 leading-tight placeholder-coolGray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 border border-coolGray-200 rounded-lg shadow-xs" type="email" name="email" placeholder="you@example.com" required=""/>
                     </div>
-                    <a href="forgot-password.jsp" class="text-sm text-gray-900 hover:underline">
-                        Forgot password?
-                    </a>
+                    <div class="mb-6">
+                    <label class="block mb-2 text-coolGray-800 font-medium" for="password">Password</label>
+                    <input class="w-full py-3 px-4 text-coolGray-500 leading-tight placeholder-coolGray-500 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 border border-coolGray-200 rounded-lg shadow-xs" type="password" name="password" placeholder="Enter your password" required=""/>
+                    </div>
+                    <div class="mb-6 flex items-center justify-between">
+                    <label>
+                        <input type="checkbox" name="remember" value="1"/>
+                        <span class="ml-1 text-coolGray-800">Remember me</span>
+                    </label>
+                    <a class="text-black hover:text-gray-800 font-medium" href="#">Forgot Password?</a>
+                    </div>
+                    <button class="inline-block py-3 px-7 w-full text-lg leading-7 text-white bg-black hover:bg-gray-900 font-medium text-center focus:ring-2 focus:ring-white focus:ring-opacity-50 border border-transparent rounded-9xl" type="submit">Sign In</button>
+                </form>
+                <div class="mt-6 text-center">
+                    <p class="text-coolGray-500">Don't have an account? <a class="text-black hover:text-gray-800 font-medium" href="#">Sign up</a></p>
                 </div>
-                
-                <!-- Sign In Button -->
-                <button type="submit" class="crypto-btn">
-                    Sign in
-                </button>
-                
-            </form>
-            
-            <!-- Sign Up Link -->
-            <div class="mt-8 text-center">
-                <span class="text-sm text-gray-600">Not a member? </span>
-                <a href="register.jsp" class="text-sm text-gray-900 font-semibold hover:underline">
-                    Create an account
-                </a>
+                </div>
             </div>
-            
+            </div>
         </div>
-    </div>
-    
+    </section>
 </body>
 </html>
