@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for crypto launchpad */
+@layer components {
+  .crypto-card {
+    @apply bg-crypto-card border border-gray-800 rounded-xl p-6 hover:border-crypto-blue transition-all duration-300;
+  }
+  
+  .crypto-btn {
+    @apply bg-gradient-to-r from-crypto-blue to-crypto-purple px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity;
+  }
+  
+  .crypto-badge {
+    @apply bg-crypto-blue/20 text-crypto-blue px-3 py-1 rounded-full text-sm font-medium;
+  }
+}
