@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In - Crypto Launchpad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 min-h-screen flex items-center justify-center p-4">
-    <section class="relative bg-sky-50 overflow-hidden">
+<body class="bg-sky-50 min-h-screen flex items-center justify-center p-4">
+    <section class="bg-sky-50 relative overflow-hidden">
         <div class="py-20 md:py-28 min-h-screen flex items-center">
             <div class="container px-4 mx-auto">
             <div class="max-w-md mx-auto">

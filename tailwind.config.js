@@ -6,15 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        'crypto-dark': '#0f0f1e',
-        'crypto-card': '#1a1a2e',
-        'crypto-blue': '#00d4ff',
-        'crypto-purple': '#7b2ff7',
-        'crypto-green': '#00ff88',
-      },
       fontFamily: {
-        'crypto': ['Inter', 'sans-serif'],
+        'sans': ['Poppins', 'ui-sans-serif', 'system-ui'],
+        'poppins': ['Poppins', 'sans-serif'],
       },
     },
   },
