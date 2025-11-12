@@ -1,75 +1,104 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!-- <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypto Launchpad - Home</title>
-    
-    <!-- Built Tailwind CSS -->
+    <title>Launchpad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
 </head>
-<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white min-h-screen">
-    
-    <!-- Navigation -->
-    <nav class="bg-black/50 backdrop-blur-lg border-b border-gray-800 sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-2">
-                    <span class="text-3xl">🚀</span>
-                    <span class="text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                        Crypto Launchpad
-                    </span>
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index.jsp" class="hover:text-blue-400 transition-colors">Home</a>
-                    <a href="projects" class="hover:text-blue-400 transition-colors">Projects</a>
-                    <a href="dashboard.jsp" class="hover:text-blue-400 transition-colors">Dashboard</a>
-                </div>
-                <a href="login.jsp" class="crypto-btn-gradient px-6 py-2 rounded-lg">
-                    Connect Wallet
+<body class="bg-white min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+    <div aria-hidden="true" class="fixed inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" 
+             class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#60a5fa] to-[#3b82f6] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+    </div>
+    <div aria-hidden="true" class="fixed inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl">
+        <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" 
+             class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#06b6d4] to-[#0ea5e9] opacity-25 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
+    </div>
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=600" alt="" class="h-8 w-auto" />
+            </a>
+        </div>
+        <div class="flex lg:hidden">
+            <button type="button" command="show-modal" commandfor="mobile-menu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            <a href="./launch.jsp" class="text-sm/6 font-semibold text-gray-900">Launch</a>
+            <a href="./dex.jsp" class="text-sm/6 font-semibold text-gray-900">Buy</a>
+            <a href="./dex.jsp" class="text-sm/6 font-semibold text-gray-900">Sell</a>
+            <a href="./about-us.jsp" class="text-sm/6 font-semibold text-gray-900">About Us</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+            <a href="./login.jsp" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        </nav>
+        <el-dialog>
+        <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+            <div tabindex="0" class="fixed inset-0 focus:outline-none">
+            <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Your Company</span>
+                    <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=blue&shade=600" alt="" class="h-8 w-auto" />
                 </a>
+                <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Close menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                </div>
+                <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                    <a href="./launch.jsp" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Launch</a>
+                    <a href="./dex.jsp" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Buy</a>
+                    <a href="./dex.jsp" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Sell</a>
+                    <a href="./about-us.jsp" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About Us</a>
+                    </div>
+                    <div class="py-6">
+                    <a href="./login.jsp" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                    </div>
+                </div>
+                </div>
+            </el-dialog-panel>
+            </div>
+        </dialog>
+        </el-dialog>
+    </header>
+
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+        <div aria-hidden="true" class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+        </div>
+        <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+            <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Learn about this project. <a href="./about-us.jsp" class="font-semibold text-blue-600"><span aria-hidden="true" class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
             </div>
         </div>
-    </nav>
-    
-    <!-- Hero Section -->
-    <div class="container mx-auto px-6 py-20">
-        <div class="text-center max-w-4xl mx-auto">
-            <h1 class="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                Welcome to the Future of Token Launches
-            </h1>
-            <p class="text-xl text-gray-300 mb-8">
-                Discover and invest in the next generation of blockchain projects
-            </p>
-            <div class="flex justify-center space-x-4">
-                <a href="projects" class="crypto-btn-gradient px-8 py-4 rounded-lg text-lg">
-                    Explore Projects
-                </a>
-                <a href="login.jsp" class="border border-blue-500 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-500/10 transition-colors">
-                    Get Started
-                </a>
+        <div class="text-center">
+            <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Launch, grow, and scale your blockchain project</h1>
+            <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">The trusted launchpad helping blockchain projects raise capital and build communities from day one.</p>
+            <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="./login.jsp" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Get started</a>
+            <a href="./about-us.jsp" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
             </div>
+        </div>
+        </div>
+        <div aria-hidden="true" class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
         </div>
     </div>
-    
-    <!-- Stats Section -->
-    <div class="container mx-auto px-6 py-12">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-black/30 backdrop-blur-lg border border-gray-800 rounded-2xl p-8 text-center hover:border-blue-500 transition-colors">
-                <div class="text-5xl font-bold text-blue-400 mb-2">50+</div>
-                <div class="text-gray-400">Projects Launched</div>
-            </div>
-            <div class="bg-black/30 backdrop-blur-lg border border-gray-800 rounded-2xl p-8 text-center hover:border-purple-500 transition-colors">
-                <div class="text-5xl font-bold text-purple-400 mb-2">$10M+</div>
-                <div class="text-gray-400">Total Raised</div>
-            </div>
-            <div class="bg-black/30 backdrop-blur-lg border border-gray-800 rounded-2xl p-8 text-center hover:border-pink-500 transition-colors">
-                <div class="text-5xl font-bold text-pink-400 mb-2">25K+</div>
-                <div class="text-gray-400">Active Users</div>
-            </div>
-        </div>
     </div>
-    
 </body>
 </html>
