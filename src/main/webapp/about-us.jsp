@@ -7,30 +7,9 @@
     <title>Launchpad</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="css/output.css" rel="stylesheet">
-    <style>
-        .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600');
-            background-size: cover;
-            background-position: center;
-        }
-        .cta-bg {
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600');
-            background-size: cover;
-            background-position: center;
-        }
-        .grayscale-hover {
-            filter: grayscale(100%);
-            transition: filter 0.3s;
-        }
-        .grayscale-hover:hover {
-            filter: grayscale(0%);
-        }
-    </style>
 </head>
-<body class="bg-white text-black overflow-x-hidden">
-    <header class="absolute inset-x-0 top-0 z-50 bg-white/30 backdrop-blur-md">
+<body class="bg-white text-black overflow-x-hidden font-[Poppins]">
+    <header class="inset-x-0 top-0 z-50 bg-white/30 backdrop-blur-md">
         <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
         <div class="flex lg:flex-1">
             <a href="#" class="-m-1.5 p-1.5">

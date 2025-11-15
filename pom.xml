@@ -48,6 +48,20 @@
             <artifactId>jbcrypt</artifactId>
             <version>0.4</version>
         </dependency>
+
+        <!-- Web3j for Ethereum/Base/Arbitrum interaction -->
+        <dependency>
+            <groupId>org.web3j</groupId>
+            <artifactId>core</artifactId>
+            <version>5.0.1</version>
+        </dependency>
+        
+        <!-- For smart contract code generation -->
+        <dependency>
+            <groupId>org.web3j</groupId>
+            <artifactId>contracts</artifactId>
+            <version>5.0.1</version>
+        </dependency>
     </dependencies>
     
     <build>
