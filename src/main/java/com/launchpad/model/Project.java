@@ -8,19 +8,19 @@ public class Project {
     private double tokenPrice;
     private long tokensAvailable;
     private String contractAddress;
-    private String status; // "upcoming", "live", "ended"
+    private String statusBound;
     private String launchDate;
     
     // Constructor
     public Project(int id, String name, String symbol, String description, 
-                   double tokenPrice, long tokensAvailable, String status) {
+                   double tokenPrice, long tokensAvailable, String statusBound) {
         this.id = id;
         this.name = name;
         this.symbol = symbol;
         this.description = description;
         this.tokenPrice = tokenPrice;
         this.tokensAvailable = tokensAvailable;
-        this.status = status;
+        this.statusBound = statusBound;
     }
     
     // Getters and Setters
@@ -39,8 +39,8 @@ public class Project {
     public long getTokensAvailable() { return tokensAvailable; }
     public void setTokensAvailable(long tokensAvailable) { this.tokensAvailable = tokensAvailable; }
     
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public String getStatus() { return statusBound; }
+    public void setStatus(String statusBound) { this.statusBound = statusBound; }
     
     // Add other getters/setters
 }

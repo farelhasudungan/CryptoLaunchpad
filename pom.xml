@@ -34,6 +34,20 @@
             <artifactId>jstl</artifactId>
             <version>1.2</version>
         </dependency>
+        
+        <!-- PostgreSQL JDBC Driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.3</version>
+        </dependency>
+
+        <!-- jBCrypt for password hashing -->
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
     </dependencies>
     
     <build>
@@ -61,7 +75,6 @@
                 </configuration>
             </plugin>
             
-            <!-- REMOVE or comment out frontend-maven-plugin -->
         </plugins>
     </build>
 </project>
