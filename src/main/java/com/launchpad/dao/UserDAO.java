@@ -27,13 +27,12 @@ public class UserDAO {
     }
 
     public boolean validateUser(String email, String password) {
-        String query = "SELECT * FROM users WHERE email = ? AND password = ?";
+        String query = "SELECT * FROM users WHERE email = ?";
         
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(query)) {
             
-            stmt.setString(1, email);
-            stmt.setString(2, PasswordHash.hashPassword(password));            
+            stmt.setString(1, email);       
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {

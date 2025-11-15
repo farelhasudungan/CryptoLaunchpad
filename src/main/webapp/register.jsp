@@ -56,7 +56,7 @@
                             <button class="inline-block py-3 px-7 w-full text-lg leading-7 text-white bg-black hover:bg-gray-900 font-medium text-center focus:ring-2 focus:ring-white focus:ring-opacity-50 border border-transparent rounded-full" type="submit">Sign Up</button>
                         </form>
                         <div class="mt-6 text-center">
-                            <p class="text-gray-500">Already have an account? <a class="text-black hover:text-gray-800 font-medium" href="./login.jsp">Sign in</a></p>
+                            <p class="text-gray-500">Already have an account? <a class="text-black hover:text-gray-800 font-medium" href="./login">Sign in</a></p>
                         </div>
                     </div>
                 </div>

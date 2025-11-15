@@ -34,13 +34,13 @@
             </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-            <a href="./launch.jsp" class="text-sm/6 font-semibold text-gray-900">Launch</a>
-            <a href="./dex.jsp" class="text-sm/6 font-semibold text-gray-900">Buy</a>
-            <a href="./dex.jsp" class="text-sm/6 font-semibold text-gray-900">Sell</a>
-            <a href="./about-us.jsp" class="text-sm/6 font-semibold text-gray-900">About Us</a>
+            <a href="./launch" class="text-sm/6 font-semibold text-gray-900">Launch</a>
+            <a href="./dex" class="text-sm/6 font-semibold text-gray-900">Buy</a>
+            <a href="./dex" class="text-sm/6 font-semibold text-gray-900">Sell</a>
+            <a href="./about-us" class="text-sm/6 font-semibold text-gray-900">About Us</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="./login.jsp" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+            <a href="./login" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
         </div>
         </nav>
         <el-dialog>
@@ -62,13 +62,13 @@
                 <div class="mt-6 flow-root">
                 <div class="-my-6 divide-y divide-gray-500/10">
                     <div class="space-y-2 py-6">
-                    <a href="./launch.jsp" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Launch</a>
-                    <a href="./dex.jsp" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Buy</a>
-                    <a href="./dex.jsp" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Sell</a>
-                    <a href="./about-us.jsp" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About Us</a>
+                    <a href="./launch" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Launch</a>
+                    <a href="./dex" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Buy</a>
+                    <a href="./dex" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Sell</a>
+                    <a href="./about-us" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">About Us</a>
                     </div>
                     <div class="py-6">
-                    <a href="./login.jsp" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                    <a href="./login" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
                     </div>
                 </div>
                 </div>
@@ -84,15 +84,15 @@
         <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div class="hidden sm:mb-8 sm:flex sm:justify-center">
             <div class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-            Learn about this project. <a href="./about-us.jsp" class="font-semibold text-blue-600"><span aria-hidden="true" class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+            Learn about this project. <a href="./about-us" class="font-semibold text-blue-600"><span aria-hidden="true" class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
             </div>
         </div>
         <div class="text-center">
             <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">Launch, grow, and scale your blockchain project</h1>
             <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">The trusted launchpad helping blockchain projects raise capital and build communities from day one.</p>
             <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="./login.jsp" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Get started</a>
-            <a href="./about-us.jsp" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+            <a href="./login" class="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Get started</a>
+            <a href="./about-us" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
             </div>
         </div>
         </div>
